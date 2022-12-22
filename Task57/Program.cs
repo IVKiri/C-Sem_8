@@ -32,6 +32,8 @@ int[,] matrix = FillMatrix(m, n);
 PrintMatrix(matrix);
 Console.WriteLine();
 
+// Первый вариант
+
 for (int k = 0; k < 10; k++)
 {
     int count = 0;
@@ -47,5 +49,25 @@ for (int k = 0; k < 10; k++)
     }
     if (count != 0) Console.WriteLine($"Кол-во повторений для {k} = {count}");
 }
+
+//  Второй вариант
+
+// int[] countArray = new int[10];
+// for (int i = 0; i < matrix.GetLength(0); i++)
+// {
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//         int index = matrix[i, j];
+//         countArray[index]++;
+//     }
+// }
+
+// for(int i = 0; i < countArray.Length; i++)
+// {
+//     if(countArray[i] !=0)
+//     {
+//         Console.WriteLine($"Кол-во повторений для {i} = {countArray[i]}");
+//     }
+// }
 
 
